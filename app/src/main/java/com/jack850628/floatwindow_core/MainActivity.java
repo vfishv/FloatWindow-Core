@@ -69,12 +69,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.float_window_example:
+        if (R.id.float_window_example==item.getItemId()){
                 navController.navigate(R.id.homePage);
                 drawerLayout.closeDrawers();
                 return true;
-            case R.id.window_control:
+        }
+        else if (R.id.window_control==item.getItemId()){
                 navController.navigate(R.id.windowControl);
                 drawerLayout.closeDrawers();
                 return true;

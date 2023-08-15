@@ -4,6 +4,7 @@ plugins {
 
 android {
     compileSdk 34
+    namespace "com.jack850628.floatwindow_core"
 
     defaultConfig {
         applicationId "com.jack850628.floatwindow_core"
